@@ -5,10 +5,10 @@
             user="postgres"
             password="POSTGRES" /> 
   <document name="employees">
-    <entity name="emp_dtl" query="select * FROM emp_dtl">
-	<field column="emp_no" name="id"/>
-	<field column="emp_nm" name="empName"/>
-	<field column="emp_add" name="empAdd"/>
+    <entity name="emp_dtl" query="select * from information_schema.columns">
+	<field column="table_name" name="tableName"/>
+	<field column="column_name" name="clmnName"/>
+	<field column="table_schema" name="schemaName"/>
 	</entity>
   </document>
   

@@ -146,7 +146,7 @@
 
    <dynamicField name="ignored_*" type="ignored" multiValued="true"/>
    <dynamicField name="attr_*" type="text_general" indexed="true" stored="true" multiValued="true"/>
-	<dynamicField name="*_name"  type="text_general"   multiValued="false" indexed="true"  stored="true" />
+   <dynamicField name="*_name"  type="text_general" multiValued="false" indexed="true"  stored="true" />
    <dynamicField name="random_*" type="random" />
 
    <!-- uncomment the following to ignore any fields that don't already match an existing 
@@ -159,8 +159,13 @@
       Unless this field is marked with required="false", it will be a required field
    -->
  <uniqueKey>id</uniqueKey>
- <field name="empName"  type="text_general" indexed="true" stored="true"/>
- <field name="emp_add"  type="text_general" indexed="true" stored="true"/>
+ <field name="tableName"  type="text_en_splitting" indexed="true" stored="true"/>
+ <field name="clmnName"  type="text_ws" indexed="true" stored="true"/>
+ <field name="schemaName"  type="text_general" indexed="true" stored="true"/>
+ 
+ <!-- <uniqueKey>id</uniqueKey>
+ <field name="Institute"  type="text_general" indexed="true" stored="true"/>
+ <field name="Name"  type="text_general" indexed="true" stored="true"/> -->
  <!-- Fields added for books.csv load-->
  
  
